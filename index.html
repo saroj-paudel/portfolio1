@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+
+            *,html{
+                margin: 0;
+                padding: 0;
+                /* border: 1px solid red; */
+                font-family: 'Poppins',Arial, Helvetica, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+              
+            body{
+                background-color: black;
+                color: white;
+            }
+section{
+    height: 100vh;
+}
+            a{
+                text-decoration-line:none;
+                color: white;
+            }
+nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: dodgerblue;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.4); */
+}
+nav div{
+   
+    height: 100%;
+    gap: 250px;
+    /* margin: auto; */
+    display: flex;
+    /* position: revert-layer; */
+    /* margin: auto; */
+    align-items: center;
+    justify-content: space-around;
+}
+            nav div ul{
+                list-style-type: none;
+            }
+            nav div ul li{
+                padding: 15px;
+                display: inline;
+            }
+            nav div ul li a{
+                font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+                color: #6d6d6d;
+                text-decoration: none;
+                letter-spacing: 1px;
+                text-underline-offset: 7px;
+                transition: text-underline-offset .3s ease;
+            }
+            nav div ul li a#h{
+                color: #e1e1e1; 
+            }
+             nav div ul li a:hover{
+                color: #ececec;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+
+            } 
+           nav div img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+           } 
+           
+           #main img{
+            height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    border:3px solid #e1e1e1;
+    cursor: pointer;
+           }
+           #main{
+            padding: 100px;
+            display: flex;
+    justify-content: space-around;
+           }
+           #main #info{
+            width: fit-content;
+            display: inline-block;
+            line-height: 50px;
+            font-size: x-large;
+           }
+           #resume a{
+            transition: all .2s ease-in-out;
+
+           }
+           #resume{
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: 2px solid #ececec;
+            color: #ececec;
+            background-color: rgb(0, 0, 0);
+            transition: all .2s ease-in-out;
+           }
+           
+           #resume:hover{
+            background-color: #ececec; 
+             /* color: black ; */
+       
+           }
+           #resume:hover a{
+            /* background-color: #ececec;  */
+             color: black ;
+       
+           }
+           #main #info div{
+            display: flex;
+            padding: 10px 0;
+            gap: 15px;
+           }
+           #main #info div a i{
+            cursor: pointer;
+            color: #e1e1e1;
+           }
+           #head{
+display:flex;
+
+width: 100%;
+padding: 75px 0 50px 0;
+    justify-content: center;
+    align-items: center;
+           }
+
+           #inf{
+            padding: 50px 150px;
+            display: flex;
+            flex-direction: row;
+            text-align: justify;
+            gap: 230px;
+            justify-content: center;
+           }
+           #about #inf img{
+            width: 300px;
+            border-radius: 30px;
+            border: 2px solid white;
+            object-fit: contain;
+           }
+          #contact #inf a{
+            color: wheat;
+            font-style: italic;
+            text-decoration: underline;
+          }
+
+        </style>
+</head>
+
+<body>
+    <section id="home">
+    <nav>
+        <div>
+            <img  src="logo.jpg" alt="logo">
+            <ul>
+                <li><a href="#home" id="h">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+
+        <div id="main">
+            <div id="info">
+                <h1>Hi there !</h1>
+                <h2>I am Saroj Paudel</h2>
+                <p>I am studying Bsc.CSIT in Bhairahawa Multiple Campus.</p>
+                <button id="resume"><a href="saroj_paudel_resume.pdf">Resume</a></button>
+                <div>
+                    <a href="https://t.me/sarozpaudel" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/saroj-paudel" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/paudel-saroj
+
+                    " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+            <img src="171614203.jpeg" alt="">
+        </div>
+    </section>
+    <hr>
+    <section id="about">
+        <div id="head"><h1>About me</h1></div>
+        
+            <div id="inf">
+
+                <p>I am a student at Bhairahawa Multiple Campus, currently pursuing a Bachelor's degree in Bsc. CSIT. I have a strong interest in computer science and technology.
+<br><br>
+                    <b>My Education</b>
+                    <br>
+                     -> Bhairahawa Multiple Campus: Bachelor's degree in Bsc. CSIT (2024 - Present)<br>
+                     -> Shree Mahendra Secondary School: Secondary Level Computer Engineering (2020 - 2024)</p>
+                <img src="soz.jpg" alt="">
+            </div>
+       
+    </section>
+    <hr>
+    <section id="projects">
+        <div id="head">
+            <h1>My Projects</h1>
+        </div>
+        <div id="inf"><p>I haven't done any projects yes !</p></div>
+    </section>
+    <hr>
+    <section id="contact">
+        <div id="head">
+            <h1>Contact me</h1>
+        </div>
+        <div id="inf"><p>You can contact me via <a href="https://t.me/sozpaudel">Telegram</a>.</p></div>
+ 
+    </section>
+</body>
+
+</html>
